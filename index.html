@@ -1,15 +1,75 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Девайс</title>
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/styl.css">
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<title>Девайс</title>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/styl.css">
+	</head>
+	<body>
+		<header>
+			<h1 class="visually-hidden">Навигация по главной странице магазина Device</h1>
+			<nav class="nav">
+				<a class="nav__logo" href="#">
+					<img src="img/nav-logo" width="" height="" alt="Логотип Device">
+				</a>
+				<ul class="nav__user">
+					<li class="nav__search">
+						<form class="nav__form" action="https://echo.htmlacademy.ru" method="post">
+							<input class="nav__input" type="text" id="nav_input" name="subject" placeholder="Поиск по сайту">
+							<label class="nav__label visually-hidden" for="nav_input">Поиск по сайту</label>
+							<button class="nav__button button" type="submit">Найти</button>
+						</form>
+					</li>
+					<li class="nav__person">
+						<a class="nav__login" href=#"">Войти</a>
+					</li>
+					<li class="nav__compare">
+						<a class="nav__compare" href=#"">Сравнить</a>
+					</li>
+					<li class="nav__cart">
+						<a class="nav__cart" href=#"">Корзина</a>
+					</li>
+				</ul>
+				<ul class="nav__site">
+					<li class="nav__item catalog">
+						<a class="nav__link" href="#">Каталог товаров</a>
+							<ul class="catalog__list">
+								<li class="catalog__item">
+									<a class="catalog__link" href="#">Виртуальная реальность</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="catalog.html">Моноподы для селфи</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="#">Экшн-камеры</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="#">Фитнес-браслеты</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="#">Умные часы</a>
+								</li>
+								<li class="catalog__item">
+									<a class="catalog__link" href="#">Квадрокоптеры</a>
+								</li>
+							</ul>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Доставка</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Гарантия/a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+
+		</header>
 
 
-  
 
-  </body>
+	</body>
 </html>
