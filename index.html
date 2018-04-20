@@ -80,8 +80,8 @@
 				<input class="visually-hidden promo__input" type="radio" name="toggle" id="slide2">
 				<input class="visually-hidden promo__input" type="radio" name="toggle" id="slide3">
 				<ul class="promo__slider-list">
-					<li class="promo__slider-item">
-						<img src="img/slider-1.png" width="348" height="486" alt="селфи-палка">
+					<li class="promo__slider-item slide1">
+						<img class="promo__slide1" src="img/slider-1.png" width="384" height="486" alt="селфи-палка">
 					<div class="promo__column">
 						<h2 class="promo__slogan">
 							Делай селфи,<br>как Бен Стиллер!
@@ -95,8 +95,7 @@
 						
 						<a class="promo__link button" href="#">Подробнее</a>
 						
-						<label class="visually-hidden promo__label-slide1" for="slide1">Первый слайд</label>
-						<ul class="promo__description">
+						<ul class="promo__description1">
 							<li class="promo__item">
 								<span class="promo__value">8,5 м</span>
 								<p class="promo__field">Длина палки</p>
@@ -112,21 +111,22 @@
 						</ul>
 					</div>
 					</li>
-					<li class="promo__slider-item">
-						<img src="img/slider-2.png" width="345" height="485" alt="фитнес-браслет">
+					<li class="promo__slider-item slide2">
+						<img class="promo__slide2" src="img/slider-2.png" width="345" height="485" alt="фитнес-браслет">
 					<div class="promo__column">
 						<h2 class="promo__slogan">
 							Худеем<br>правильно!
 						</h2>
 						<p class="promo__text">
-							Мотивирующие фитнес-браслеты помогут найти в себе силы 
+							Мотивирующие фитнес-браслеты помогут найти в себе силы
+						</p> 
+						<p class="promo__text">
 							не пропускать занятия и соблюдать диету.
 						</p>
 						
 						<a class="promo__link button" href="#">Подробнее</a>
 						
-						<label class="visually-hidden promo__label-slide2" for="slide2">Второй слайд</label>
-						<table class="promo__description">
+						<table class="promo__description2">
 							<tr>
 								<td class="promo__value">48 часов</td>
 							</tr>
@@ -136,21 +136,22 @@
 						</table>
 					</div>
 					</li>
-					<li class="promo__slider-item">
-						<img src="img/slider-3.png" width="530" height="325" alt="квадрокоптер">
+					<li class="promo__slider-item slide3">
+						<img class="promo__slide3" src="img/slider-3.png" width="530" height="325" alt="квадрокоптер">
 					<div class="promo__column">
-						<h2 class="promo__slogan">
+						<h2 class="promo__slogan promo__slogan3">
 							Порхает как бабочка,<br>жалит как пчела!
 						</h2>
 						<p class="promo__text">
-							Этот обычный, на первый взгляд, квадрокоптер оснащен 
+							Этот обычный, на первый взгляд, квадрокоптер оснащен
+						</p> 
+						<p class="promo__text">
 							мощным лазером, замаскированным под стандартную камеру.
 						</p>
 						
 						<a class="promo__link button" href="#">Подробнее</a>
 						
-						<label class="visually-hidden promo__label-slide3" for="slide3">Третий слайд</label>
-						<ul class="promo__description">
+						<ul class="promo__description3">
 							<li class="promo__item">
 								<span class="promo__value">800 м</span>
 								<p class="promo__field">Дальность полета</p>
@@ -163,6 +164,11 @@
 					</div>
 					</li>
 				</ul>
+				<div class="slider__controls">
+					<label class="promo__label-slide1" for="slide1"></label>
+					<label class="promo__label-slide2" for="slide2"></label>
+					<label class="promo__label-slide3" for="slide3"></label>
+				</div>
 			</section>
 			<section class="popular">
 				<h1 class="visually-hidden">Популярные товары</h1>
