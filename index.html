@@ -34,6 +34,7 @@
 				<ul class="nav__site">
 					<li class="nav__item catalog">
 						<a class="nav__link" href="#">Каталог товаров</a>
+						<div class="catalog__column">
 							<ul class="catalog__list">
 								<li class="catalog__item">
 									<a class="catalog__link" href="#">Виртуальная реальность</a>
@@ -44,16 +45,21 @@
 								<li class="catalog__item">
 									<a class="catalog__link" href="#">Экшн-камеры</a>
 								</li>
+							</ul>
+							<ul class="catalog__list">
 								<li class="catalog__item">
 									<a class="catalog__link" href="#">Фитнес-браслеты</a>
 								</li>
 								<li class="catalog__item">
 									<a class="catalog__link" href="#">Умные часы</a>
 								</li>
+							</ul>
+							<ul class="catalog__list">
 								<li class="catalog__item">
 									<a class="catalog__link" href="#">Квадрокоптеры</a>
 								</li>
 							</ul>
+						</div>
 					</li>
 					<li class="nav__item">
 						<a class="nav__link" href="#">Доставка</a>
@@ -76,6 +82,7 @@
 				<ul class="promo__slider-list">
 					<li class="promo__slider-item">
 						<img src="img/slider-1.png" width="348" height="486" alt="селфи-палка">
+					<div class="promo__column">
 						<h2 class="promo__slogan">
 							Делай селфи,<br>как Бен Стиллер!
 						</h2>
@@ -89,23 +96,27 @@
 						<a class="promo__link button" href="#">Подробнее</a>
 						
 						<label class="visually-hidden promo__label-slide1" for="slide1">Первый слайд</label>
-						<table class="promo__description">
-							<tr>
-								<td class="promo__value">8,5 м</td>
-								<td class="promo__value">5 кг</td>
-								<td class="promo__value">Карбон</td>
-							</tr>
-							<tr>
-								<td class="promo__field">Длина палки</td>
-								<td class="promo__field">Вес палки</td>
-								<td class="promo__field">Материал</td>
-							</tr>
-						</table>
+						<ul class="promo__description">
+							<li class="promo__item">
+								<span class="promo__value">8,5 м</span>
+								<p class="promo__field">Длина палки</p>
+							</li>
+							<li class="promo__item">
+								<span class="promo__value">5 кг</span>
+								<p class="promo__field">Вес палки</p>
+							</li>
+							<li class="promo__item">
+								<span class="promo__value">Карбон</span>
+								<p class="promo__field">Материал</p>
+							</li>
+						</ul>
+					</div>
 					</li>
 					<li class="promo__slider-item">
 						<img src="img/slider-2.png" width="345" height="485" alt="фитнес-браслет">
+					<div class="promo__column">
 						<h2 class="promo__slogan">
-							Худеем правильно!
+							Худеем<br>правильно!
 						</h2>
 						<p class="promo__text">
 							Мотивирующие фитнес-браслеты помогут найти в себе силы 
@@ -123,9 +134,11 @@
 								<td class="promo__field">Без подзарядки</td>
 							</tr>
 						</table>
+					</div>
 					</li>
 					<li class="promo__slider-item">
-						<img src="img/slider-3.png" width="526" height="334" alt="квадрокоптер">
+						<img src="img/slider-3.png" width="530" height="325" alt="квадрокоптер">
+					<div class="promo__column">
 						<h2 class="promo__slogan">
 							Порхает как бабочка,<br>жалит как пчела!
 						</h2>
@@ -137,16 +150,17 @@
 						<a class="promo__link button" href="#">Подробнее</a>
 						
 						<label class="visually-hidden promo__label-slide3" for="slide3">Третий слайд</label>
-						<table class="promo__description">
-							<tr>
-								<td class="promo__value">800 м</td>
-								<td class="promo__value">50 м</td>
-							</tr>
-							<tr>
-								<td class="promo__field">Дальность полета</td>
-								<td class="promo__field">Радиус поражения</td>
-							</tr>
-						</table>
+						<ul class="promo__description">
+							<li class="promo__item">
+								<span class="promo__value">800 м</span>
+								<p class="promo__field">Дальность полета</p>
+							</li>
+							<li class="promo__item">
+								<span class="promo__value">50 м</span>
+								<p class="promo__field">Радиус поражения</p>
+							</li>
+						</ul>
+					</div>
 					</li>
 				</ul>
 			</section>
