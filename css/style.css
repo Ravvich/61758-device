@@ -456,6 +456,8 @@ a.nav__cart {
 
 /*-----------popular----------*/
 
+
+
 .popular {
 	width: 1160px;
 	margin: 0 auto;
@@ -474,11 +476,11 @@ a.nav__cart {
 	width: 160px;
 	height: 160px;
 	background-color: rgba(240, 197, 46, 0.5);
-	
 }
 
 .popular__link:hover {
 	background-color: rgba(240, 197, 46, 1);
+	transition-duration: 0.3s;
 }
 
 .popular__link:active .popular__img {
@@ -508,7 +510,45 @@ a.nav__cart {
 }
 
 
+/*-------brands--------*/
 
+
+.brands {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.brands__list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.brands__item:nth-child(1):hover {
+	background-image: url(../img/logo-1.jpg);
+	background-repeat: no-repeat;
+	background-position: 0, 0; 
+}
+
+.brands__item:nth-child(2):hover {
+	background-image: url(../img/logo-2.jpg);
+	background-repeat: no-repeat;
+	background-position: 0, 0; 
+}
+
+.brands__item:nth-child(3):hover {
+	background-image: url(../img/logo-3.jpg);
+	background-repeat: no-repeat;
+	background-position: 0, 0; 
+}
+
+.brands__item:nth-child(4):hover {
+	background-image: url(../img/logo-4.jpg);
+	background-repeat: no-repeat;
+	background-position: 0, 0; 
+}
 
 
 
