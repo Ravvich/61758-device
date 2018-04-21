@@ -225,34 +225,42 @@
 			</section>
 			<section class="services">
 				<h2 class="visually-hidden">Наши сервисы</h2>
-					<input class="services__radio visually-hidden" type="radio" id="delivery" name="service-group" tabindex="0" checked>
-					<input class="services__radio visually-hidden" type="radio" id="warranty" name="service-group" tabindex="0">
-					<input class="services__radio visually-hidden" type="radio" id="credit" name="service-group" tabindex="0">
-				<div class="services__list">
-					<label class="services__label button" for="delivery">Доставка</label>
-					<label class="services__label button" for="warranty">Гарантия</label>
-					<label class="services__label button" for="credit">Кредит</label>
-				</div>
+					<input class="services__radio visually-hidden" type="radio" id="delivery" name="toggle" checked>
+					<input class="services__radio visually-hidden" type="radio" id="warranty" name="toggle">
+					<input class="services__radio visually-hidden" type="radio" id="credit" name="toggle">
+				<div class="services__wrap">
+				<ul class="services__list">
+					<li class="services__item">
+						<label class="services__label button active" for="delivery">Доставка</label>
+					</li>
+					<li class="services__item">
+						<label class="services__label button" for="warranty">Гарантия</label>
+					</li>
+					<li class="services__item">
+						<label class="services__label button" for="credit">Кредит</label>
+					</li>
+				</ul>
 				<ul class="services__description">
-					<li class="services__delivery">
+					<li class="services__delivery delivery">
 						<h3 class="services__title">Доставка</h3>
 						<p class="services__text">
 							Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
 						</p>
 					</li>
-					<li class="services__warranty">
+					<li class="services__warranty warranty">
 						<h3 class="services__title">Гарантия</h3>
 						<p class="services__text">
 							Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
 						</p>
 					</li>
-					<li class="services__credit">
+					<li class="services__credit credit">
 						<h3 class="services__title">Кредит</h3>
 						<p class="services__text">
 							Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
 						</p>
 					</li>
-				</ul> 
+				</ul>
+				</div>
 			</section>
 			<section class="brands">
 				<h2 class="visually-hidden">Популярные бренды</h2>
@@ -269,7 +277,7 @@
 					</li>
 					<li class="brands__item">
 						<a href="#" class="brands__link">
-							<img src="img/logo-3.png" width="260" height="100" alt="">
+							<img src="img/logo-3.png" width="260" height="100" alt="go_pro">
 						</a>
 					</li>
 					<li class="brands__item">
