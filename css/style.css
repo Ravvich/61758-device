@@ -1039,6 +1039,154 @@ input[type="radio"].visually-hidden {
 
 
 
+/*----------popap---------*/
+
+
+.popup {
+	width: 960px;
+	display: none;
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50%;
+	margin: 0;
+	margin-top: -276px;
+	padding: 0;
+	padding-top: 100px;
+	padding-bottom: 90px;
+	padding-left: 100px;
+	padding-right: 100px;
+	background-color: #ffffff;
+	box-shadow: 0 20px 40px 0 rgba(0, 1, 1, .75);
+	z-index: 10;
+}
+
+.popup__close {
+	position: absolute;
+	right: 22px;
+	top: 22px;
+	width: 55px;
+	height: 55px;
+	border: 1px solid transparent;
+	background-color: rgba(240, 197, 46, 0.5);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.popup__close::before,
+.popup__close::after {
+	content: "";
+	width: 35px;
+	height: 2px;
+	position: absolute;
+	background-color: #ffffff;
+}
+
+.popup__close::before {
+	top: 26px;
+	right: 9px;
+	transform: rotate(45deg);
+}
+
+.popup__close::after {
+	top: 26px;
+	right: 9px;
+	transform: rotate(-45deg);
+}
+
+.popup__close:hover {
+	background-color: rgba(240, 197, 46, 1);
+}
+
+.popup__close:active {
+	background-color: rgba(240, 197, 46, 0.3);
+}
+
+.popup__list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	width: 760px;
+	margin: 0;
+	padding: 0;
+}
+
+.popup__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.popup__name,
+.popup__email {
+	width: 360px;
+}
+
+.popup__text {
+	width: 100%;
+	margin-top: 40px;
+	margin-bottom: 55px;
+}
+
+.popup__name {
+	margin-right: 40px;
+}
+
+.popup__name input,
+.popup__email input {
+	height: 50px;
+	padding: 20px;
+	border: none;
+	background-color: rgb(242, 242, 242);
+}
+
+.popup__text textarea { 
+	padding: 20px;
+	border: none;
+	background-color: rgb(242, 242, 242);
+}
+
+.popup__item input:hover,
+.popup__item textarea:hover {
+	background-color: rgb(234, 234, 234);
+}
+
+.popup__item input:focus,
+.popup__item textarea:focus {
+	background-color: #ffffff;
+	border: 3px solid #f0c52e;
+	outline: none;
+}
+
+
+.popup__label {
+	margin-bottom: 10px;
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+
+}
+
+input[placeholder],
+textarea[placeholder] {
+	font-family: "OpenSan-Regular", Open Sans, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	color: rgba(70, 70, 70, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
