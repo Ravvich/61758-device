@@ -73,14 +73,45 @@
 			</nav>
 		</header>
 		<main>
-			<h2>Моноподы для селфи</h2>
+			<div class="inner">
+			<h2 class="inner__title">Моноподы для селфи</h2>
 			<ul class="inner__breadcrumps">
-				<li>Главная</li>
-				<li>Каталог товаров</li>
-				<li>Моноподы для селфи</li>
+				<li class="inner_item1">
+					<a href="index.html">Главная</a>
+				</li>
+				<li class="inner_item2">
+					<a href="catalog.html">Каталог товаров</a>
+				</li>
+				<li class="inner_item3">
+					<a class="current" >Моноподы для селфи</a>
+				</li>
 			</ul>
+			</div>
+
+			<div class="inner__sort">
+				<div class="inner__sort-container">
+				<div class="filter__title">
+					<h3>Фильтр:</h3>
+				</div>
+				<div class="monopod__title">
+					<h3>Сортировка:</h3>
+					<ul class="monopod__filter">
+						<li><a href="#" class="monopod__result active">По цене</a></li>
+						<li><a href="#" class="monopod__result">По типу</a></li>
+						<li><a href="#" class="monopod__result">По популярности</a></li>
+					</ul>
+					<ul class="monopod__arrows">
+						<li><a href="#" class="arrow-up"></a></li>
+						<li><a href="#" class="arrow-down"></a></li>
+					</ul>
+				</div>
+				</div>
+			</div>
 
 			<section class="inner__catalog">
+
+				<div class="inner__catalog-container">
+
 				<div class="inner__filter filter">
 					<aside class="filter">
 					<form action="https://echo.htmlacademy.ru" method="get">
@@ -142,19 +173,10 @@
 					</form>
 				</aside>
 				</div>
+
+
 				<div class="inner__monopod monopod">
-					<div class="monopod__title">
-						<h3>Сортировка</h3>
-						<ul class="monopod__filter">
-							<li><a href="#" class="monopod__result active">По цене</a></li>
-							<li><a href="#" class="monopod__result">По типу</a></li>
-							<li><a href="#" class="monopod__result">По популярности</a></li>
-						</ul>
-						<ul class="monopod__arrows">
-							<li><a href="#" class="arrow-up"></a></li>
-							<li><a href="#" class="arrow-down"></a></li>
-						</ul>
-					</div>
+					
 					<div class="monopod__catalog">
 						<article class="monopod__item">
 							<img src="img/item-1.jpg" width="360" height="380">
@@ -186,6 +208,7 @@
 						</ul>
 						<div><a href="#">Вперед</a></div>
 					</div>
+				</div>
 				</div>
 			</section>
 		</main>
@@ -257,6 +280,6 @@
 			</div>
 			</div>
 		</footer>
-	<script src="js/script1.js"></script>
+		<script src="js/popup.js"></script>
   </body>
 </html>

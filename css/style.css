@@ -272,7 +272,7 @@ input[type="radio"].visually-hidden {
 	padding: 0;
 	padding-left: 61px;
 	padding-right: 61px;
-	padding-top: 35px;
+	padding-top: 10px;
 	display: flex;
 	justify-content: flex-end;
 }
@@ -365,7 +365,7 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 10px;
 	position: absolute;
 	left: 134px;
-	display: flex;
+	display: none;
 	margin-top: 25px;
 	margin-bottom: 15px;
 	width: 1160px;
@@ -521,20 +521,17 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 40px;
 }
 
-.promo__slider-item:nth-child(1),
-.promo__slider-item:nth-child(2),
-.promo__slider-item:nth-child(3) {
-	z-index: -1;
-	opacity: 0;
+.slide1,
+.slide2,
+.slide3 {
+	display: none;
 }
 
 /*чтобы первый слайд был виден*/
 
-.promo__slider-item:nth-child(1) {
-	z-index: 2;
-	opacity: 1;
+.slide__show {
+	display: flex;
 }
-
 
 .promo__slider-item:nth-child(1)::after {
 	content: "01";
@@ -565,16 +562,9 @@ input[type="radio"].visually-hidden {
 	top: 340px;
 }
 
-#slide1:checked ~ .promo__slider-list > .slide1,
-#slide2:checked ~ .promo__slider-list > .slide2,
-#slide3:checked ~ .promo__slider-list > .slide3 {
-	opacity: 1;
-	z-index: 2;
-}
-
-#slide1:checked ~ .slider__controls .promo__label-slide1::after,
-#slide2:checked ~ .slider__controls .promo__label-slide2::after,
-#slide3:checked ~ .slider__controls .promo__label-slide3::after {
+.promo__label-slide1::after,
+.promo__label-slide2::after,
+.promo__label-slide3::after {
 	content: "";
 	display: block;
 	width: 7px;
@@ -585,7 +575,6 @@ input[type="radio"].visually-hidden {
 	border: 1px solid #000000;
 	border-radius: 50%;
 }
-
 
 
 /*-----------popular----------*/
@@ -1272,10 +1261,162 @@ input[type="radio"].visually-hidden {
 	color: rgba(70, 70, 70, 0.4);
 }
 
+/*---------catalog.html---------*/
+
+.inner {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.inner__title {
+	margin: 34px 65px 20px 65px;
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 47px;
+	line-height: 48px;
+	font-weight: 400;
+	letter-spacing: 0.7px;
+	color: #000000;
+}
+
+.inner__breadcrumps {
+	position: relative;
+	list-style: none;
+	margin: 0;
+	margin-left: 65px;
+	margin-bottom: 50px;
+	padding: 0;
+	width: 381px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "OpenSans-Ligh", Open Sans, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	letter-spacing: 0.14px;
+	color: rgb(220, 220, 220);
+}
+
+.inner__breadcrumps a {
+	color: rgb(220, 220, 220);
+}
+
+.inner__breadcrumps a:hover {
+	color: #464646;
+}
+
+.inner_item1::after {
+	content: "";
+	width: 4px;
+	height: 7px;
+	position: absolute;
+	left: 70px;
+	top: 10px;
+	background-image: url(../img/nav-arrow.png);
+	background-repeat: no-repeat;
+}
+
+.inner_item2::after {
+	content: "";
+	width: 4px;
+	height: 7px;
+	position: absolute;
+	top: 10px;
+	left: 220px;
+	background-image: url(../img/nav-arrow.png);
+	background-repeat: no-repeat;
+}
+
+/*---------inner__catalog---------*/
+
+.inner__sort {
+	width: 100%;
+	background: linear-gradient(to right,#dbdbdb 0%,#dbdbdb 33%,#ebebeb 33%,#ebebeb 100%);
+}
+
+.inner__sort-container {
+	display: flex;
+	max-width: 1160px;
+	margin: 0 auto;
+}
+
+.filter__title {
+	width: 330px;
+}
+
+.filter__title h3 {
+	margin: 0;
+	margin-top: 22px;
+	padding-left: 60px;
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
 
 
+.monopod__title {
+	display: flex;
+	justify-content: flex-start;
+	width: 830px;
+}
+
+.monopod__title h3 {
+	margin: 0;
+	margin-top: 22px;
+	padding-left: 75px;
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+
+.monopod__filter {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 290px;
+}
+
+.monopod__result {
+	font-family: "OpenSans", Open Sans, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.monopod__arrows {
+	list-style: none;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+	width: 40px;
+}
 
 
+.inner__catalog {
+	width: 100%;
+	background: linear-gradient(to right,#ebebeb 0%,#ebebeb 33%,transparent 33%,transparent 100%);
+}
+
+.inner__catalog-container {
+	margin: 0 auto;
+	display: flex;
+	max-width: 1160px;
+}
+
+.inner__filter {
+	width: 330px;
+}
+
+.inner__monopod {
+	width: 830px;
+}
 
 
 
