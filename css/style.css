@@ -1339,8 +1339,14 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto;
 }
 
+.filter {
+	padding-left: 30px;
+	margin: 0;
+}
+
 .filter__title {
 	width: 330px;
+	background-color: #dbdbdb;
 }
 
 .filter__title h3 {
@@ -1355,11 +1361,11 @@ input[type="radio"].visually-hidden {
 	letter-spacing: 4px;
 }
 
-
 .monopod__title {
 	display: flex;
 	justify-content: flex-start;
 	width: 830px;
+	background-color: #ebebeb;
 }
 
 .monopod__title h3 {
@@ -1412,6 +1418,9 @@ input[type="radio"].visually-hidden {
 
 .inner__filter {
 	width: 330px;
+	background-color: #ebebeb;
+	margin-top: 90px;
+
 }
 
 .inner__monopod {
@@ -1419,9 +1428,223 @@ input[type="radio"].visually-hidden {
 }
 
 
+/*---------сложный фильтр слева-------*/
+
+.filters__price {
+	position: relative;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filters__price::before {
+	content: "";
+	width: 201px;
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	top: -10px;
+}
+
+
+.filter__range {
+	position: relative;
+	margin-top: 35px;
+	margin-bottom: 37px;
+}
+
+.filters__price legend {
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.filter__scale {
+	width: 196px;
+	height: 2px;
+	background-color: #dbdbdb;
+}
+
+.filter__bar {
+	width: 110px;
+	height: 2px;
+	background-color: #91c92f;
+}
+
+.toggle {
+	position: absolute;
+	bottom: 32px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	border: none;
+	background-color: #ffffff;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.toggle-max {
+	left: 110px;
+}
+
+.filter__price-controls label {
+	display: inline-block;
+	font-family: "Gilroy-light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: rgb(170, 170, 170);
+}
+
+.filter__price-controls input {
+	width: 80px;
+	padding: 8px 10px;
+	font-family: "Gilroy-light", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	border: none;
+	color: rgb(170, 170, 170);
+	background-color: #ebebeb;
+}
 
 
 
+
+/*---------фильтр цвета-------*/
+
+.filter__color {
+	position: relative;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+.filter__color::before {
+	content: "";
+	width: 201px;
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	top: -10px;
+}
+
+.filter__color-list {
+	list-style: none;
+	margin-bottom: 50px;
+}
+
+.filter__color legend {
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+.filter__option label {
+	position: relative;
+	font-family: "OpenSans-Ligh", Open Sans, sans-serif;
+	font-size: 14px;
+	line-height: 40px;
+	font-weight: 300;
+	color: #000000;
+}
+
+.filter__input-checkbox:checked +label::before {
+	content: "";
+	width: 27px;
+	height: 23px;
+	position: absolute;
+	left: -40px;
+	top: -4px;
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.filter__input-checkbox +label::before {
+	content: "";
+	width: 27px;
+	height: 23px;
+	position: absolute;
+	left: -40px;
+	top: -4px;
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+
+
+/*---------фильтр блютус-------*/
+
+
+.filter__bluetooth {
+	position: relative;
+	border: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.filter__bluetooth::before {
+	content: "";
+	width: 201px;
+	height: 2px;
+	background-color: #000000;
+	position: absolute;
+	top: -10px;
+	
+}
+
+.filter__bluetooth-list {
+	list-style: none;
+}
+
+.filter__bluetooth legend {
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #000000;
+}
+
+
+.filter__input-radio +label::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: -40px;
+	top: -4px;
+	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.filter__input-radio:checked +label::before {
+	content: "";
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: -40px;
+	top: -4px;
+	background-image: url(../img/radio-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+
+.filter__button {
+	letter-spacing: 4px;
+}
 
 
 
