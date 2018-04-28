@@ -101,8 +101,8 @@
 						<li><a href="#" class="monopod__result">По популярности</a></li>
 					</ul>
 					<ul class="monopod__arrows">
-						<li><a href="#" class="arrow-up"></a></li>
-						<li><a href="#" class="arrow-down"></a></li>
+						<li><a href="#" class="arrow-up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 0L0 10h11z"/></svg></a></li>
+						<li><a href="#" class="arrow-down active"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#CACACA" d="M5.5 10L0 0h11"/></svg></a></li>
 					</ul>
 				</div>
 				</div>
@@ -180,6 +180,17 @@
 					<div class="monopod__catalog">
 						<article class="monopod__item">
 							<img src="img/item-1.jpg" width="360" height="380">
+
+							<div class="monopod__action">
+								<a class="monopod__action-bye button" href="#">
+									В корзину
+								</a>
+								<a class="monopod__action-compare" href="#">
+									Добавить к сравнению
+								</a>
+							</div>	
+
+
 							<div class="monopod__description">
 							<h4>Любительская селфи-палка</h4>
 							<p>500 руб.</p>
@@ -208,13 +219,13 @@
 						</article>
 					</div>
 					<div class="monopod__paginator">
-						<div><a href="#">Назад</a></div>
+						<div class="monopod__paginator-prew"><a href="#">Назад</a></div>
 						<ul class="monopod__numbers">
-							<li><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li><a href="#">3</a></li>
+							<li><a class="monopod__numbers1 active" href="#">1</a></li>
+							<li><a class="monopod__numbers2" href="#">2</a></li>
+							<li><a class="monopod__numbers3" href="#">3</a></li>
 						</ul>
-						<div><a href="#">Вперед</a></div>
+						<div class="monopod__paginator-next"><a href="#">Вперед</a></div>
 					</div>
 				</div>
 				</div>
@@ -223,7 +234,7 @@
 		<footer class="footer">
 			<div class="footer__wrap">
 			<div class="footer__top">
-				<a class="footer__logo" href="#">
+				<a class="footer__logo" href="index.html">
 					Device
 				</a>
 				<ul class="footer__user">

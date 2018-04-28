@@ -90,6 +90,7 @@ input[type="radio"].visually-hidden {
 	color: #000000;
 	background: linear-gradient(transparent 14px, #f0c52e 14px, #f0c52e 24px, transparent 24px, transparent 100%);
 	border: none;
+	transition: all 0.2s ease-in-out;
 
 }
 
@@ -1386,8 +1387,14 @@ input[type="radio"].visually-hidden {
 .monopod__filter {
 	list-style: none;
 	display: flex;
-	justify-content: space-between;
-	width: 290px;
+	justify-content: flex-start;
+	margin: 0;
+	margin-top: 18px;
+}
+
+.monopod__result:nth-child(1),
+.monopod__result:nth-child(2) {
+	margin-right: 30px;
 }
 
 .monopod__result {
@@ -1402,11 +1409,32 @@ input[type="radio"].visually-hidden {
 .monopod__arrows {
 	list-style: none;
 	margin-left: auto;
+	padding: 0;
 	display: flex;
 	justify-content: space-between;
 	width: 40px;
 }
 
+.monopod__result:hover {
+	opacity: 0.6;
+}
+
+.monopod__result:active,
+.monopod__result.active {
+	opacity: 1;
+}
+	
+.arrow-up path:hover,
+.arrow-down path:hover {
+	fill: #a9a9a9;
+}
+
+.arrow-up path:active,
+.arrow-up.active path,
+.arrow-down path:active,
+.arrow-down.active path {
+	fill: #000000;
+}
 
 .inner__catalog {
 	width: 100%;
@@ -1428,6 +1456,7 @@ input[type="radio"].visually-hidden {
 
 .inner__monopod {
 	width: 830px;
+	padding-bottom: 60px;
 	display: flex;
 	flex-direction: column;
 	background-color: #ffffff;
@@ -1662,6 +1691,7 @@ input[type="radio"].visually-hidden {
 }
 
 .monopod__item {
+	position: relative;
 	padding-left: 40px;
 	width: 400px;
 	margin-top: 40px;
@@ -1675,7 +1705,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: space-between;
 }
-
 
 .monopod__item h4 {
 	margin: 0;
@@ -1699,10 +1728,113 @@ input[type="radio"].visually-hidden {
 	color: #464646;
 }
 
+/*---------monopod__paginator----------*/
 
+.monopod__paginator {
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-top: 40px;
+	min-height: 70px;
+	width: 760px;
+	font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #000000;
+	background-color: #ebebeb;
+}
 
+.monopod__paginator-prew a,
+.monopod__paginator-next a,
+.monopod__numbers a {
+	align-content: center;
+	vertical-align: middle;
+	box-sizing: border-box;
+	color: #000000;
+}
 
+.monopod__numbers {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	width: 90px;
+	margin: 0;
+	padding: 0;
+	padding-top: 22px;
+}
 
+.monopod__paginator-prew,
+.monopod__paginator-next {
+	padding: 22px 30px 20px 30px;
+	margin: 0;
+}
+
+.monopod__paginator-prew:hover,
+.monopod__paginator-next:hover {
+	background-color: #dbdbdb;
+} 
+
+.monopod__paginator-prew:active a,
+.monopod__paginator-next:active a {
+	color: rgba(0, 0, 0, 0.3);
+} 
+
+.monopod__numbers1:hover,
+.monopod__numbers2:hover,
+.monopod__numbers3:hover {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+.monopod__numbers1:active,
+.monopod__numbers2:active,
+.monopod__numbers3:active,
+.monopod__numbers1.active {
+	color: #000000;
+}
+
+.monopod__numbers a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+/*-------------monopod__action----------*/
+
+.monopod__action {
+    position: absolute;
+    top: 190px;
+    left: 130px;
+    z-index: 1;
+    display: none;
+    width: 200px;
+}
+
+.monopod__action .monopod__action-compare {
+    line-height: 36px;
+    text-align: center;
+    color: rgba(0,0,0,.5);
+    width: 200px;
+    font-size: 13px;
+}
+
+.monopod__action .monopod__action-compare {
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+
+a.monopod__action-bye {
+    width: 190px;
+}
+
+.monopod__item img:hover + .monopod__action {
+	display: block;
+}
+
+.monopod__action:hover {
+	display: block;
+}
 
 
 
